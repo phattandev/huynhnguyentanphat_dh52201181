@@ -7,38 +7,134 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="./assets/js/main.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Tối ưu kết nối giảm độ trễ tải font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Tối ưu kết nối giảm độ trễ tải font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Font Roboto -->
+
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.7.2-web/css/all.css">
 </head>
 <body>
     <div id="main">
         <header class="header">
-            <nav class="header__navbar">
-                <ul class="header__navbar-list">
-                    <li class="header__navbar-item"><a href="">Cửa hàng</a></li>
-                    <li class="header__navbar-item"><a href="">Kết nối</a></li>
-                </ul>
+            <div class="grid">
+                <nav class="header__navbar">
+                    <div class="header__navbar-first">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="./assets/images/GYM LORD.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="header__navbar-search-box">
+                            <input type="text" name="search" id="search-input" placeholder="Bạn đang tìm sản phẩm...">
+                            <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
 
-                <ul class="header__navbar-list">
-                    <li class="header__navbar-item"><a href="">Trang chủ</a></li>
-                    <li class="header__navbar-item"><a href="">Thông báo</a></li>
-                    <li class="header__navbar-item"><a href="">Trợ giúp</a></li>
-                    <li class="header__navbar-item"><a href="">Đăng kí</a></li>
-                    <li class="header__navbar-item"><a href="">Đăng nhập</a></li>
-                </ul>
-            </nav>
-            <p style="font-size: 40px;">HELLO WORLD</p>
+                        <ul class="login">
+                            <li>
+                                <a href="">Đăng nhập</a>
+                                <i class="fa-solid fa-user login-icon"></i>
+                            </li>
+
+                            <li>
+                                <a href="">Giỏ hàng</a>
+                                <i class="fa-solid fa-cart-shopping login-icon"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <ul class="header__navbar-second">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Loại sản phẩm</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Lab thực hành</a></li>
+                        </ul>
+                    </div>
+    
+                </nav>
+            </div>
         </header>
-
-        <div class="container">
-
+            
+            
+        <div class="content_container">
+            <div class="grid">
+                <div class="slide-show">
+                    <div class="home-list-banner">
+                        <!-- <div class="home-list-banner__item active" style="width: 100%; background-image: url(./assets/images/banner_3.png);"></div>
+                        <div class="home-list-banner__item active" style="width: 100%; background-image: url(./assets/images/banner_1.png);"></div>
+                        <div class="home-list-banner__item active" style="width: 100%; background-image: url(./assets/images/banner_2.png);"></div> -->
+                        <img src="./assets/images/banner_1.png" alt="">
+                        <img src="./assets/images/banner_2.png" alt="">
+                        <img src="./assets/images/banner_3.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__col-2-10">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="./assets/images/GYM LORD.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid__col-2-10">
+                        <div class="footer__heading">Giới thiệu</div>
+                        <h4 class="introduce-content">GYM LORD - đồ án cuối kì 'webisite bán dụng cụ gym' môn học thực hành nhập môn web và ứng dụng.</h4>
+                    </div>
+                    <div class="grid__col-2-10">
+                        <div class="footer__heading">Chăm sóc khách hàng</div>
+                        <ul class="footer-list">
+                            <li><a href="">Trung tâm hỗ trợ</a></li>
+                            <li><a href="">Hướng dẫn mua hàng</a></li>
+                            <li><a href="">Hường dẫn thanh toán</a></li>
+                            <li><a href="">Góp ý, khiếu nại</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-10">
+                        <div class="footer__heading">Theo dõi chúng tôi</div>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="https://www.facebook.com/phat.huynhnguyentann">
+                                <i class="footer-icon fa-brands fa-facebook"></i>
+                                Facebook
+                                </a>
+                            </li>
+                            <li><a href="https://www.instagram.com/tphat2904/">
+                                <i class="footer-icon fa-brands fa-instagram"></i>
+                                Instagram
+                            </a></li>
+                            <li><a href="https://www.youtube.com/">
+                                <i class="footer-icon fa-brands fa-youtube"></i>
+                                Youtube
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-10">
+                        <div class="footer__heading">Nhập email giúp chúng tôi liên hệ với bạn</div>
+                        <div class="footer__email">
+                            <input type="email" name="search" id="footer-email__input" required placeholder="Nhập email của bạn...">
+                            <button type="submit" class="footer-email__btn">Gửi</button>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="grid__row">
+                    <div class="footer-bottom">
+                        <h3 class="footer-bottom__content">
+                            Họ và tên: Huỳnh Nguyễn Tấn Phát | MSSV: DH52201181 | Lớp: D22_TH02 | Nhóm 4 Thứ 2 Ca 1
+                        </h3>
+                    </div>
+                </div>
+            </div>
         </footer>
+
     </div>
 </body>
 </html>

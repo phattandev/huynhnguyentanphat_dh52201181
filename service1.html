@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ án</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Tối ưu kết nối giảm độ trễ tải font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Tối ưu kết nối giảm độ trễ tải font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Font Roboto -->
+
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.7.2-web/css/all.css">
+</head>
+<body>
+    <div id="main">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <div class="header__navbar-first">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="./assets/images/GYM LORD.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="header__navbar-search-box">
+                            <input type="text" name="search" id="search-input" placeholder="Bạn đang tìm sản phẩm...">
+                            <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+
+                        <ul class="login">
+                            <li>
+                                <a href="">Đăng nhập</a>
+                                <i class="fa-solid fa-user login-icon"></i>
+                            </li>
+
+                            <li>
+                                <a href="">Giỏ hàng</a>
+                                <i class="fa-solid fa-cart-shopping login-icon"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <ul class="header__navbar-second">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Loại sản phẩm</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Lab thực hành</a></li>
+                        </ul>
+                    </div>
+    
+                </nav>
+            </div>
+        </header>
+            
+            
+        <div class="content_container">
+            <div class="grid">
+                <div class="grid__row content_container--pt">
+                    <div class="grid__col-2">
+                        <nav class="category">
+                            <h3 class="category__heading">Danh mục</h3>
+            
+                            <ul class="category-list">
+                                <li class="category-active">
+                                    <a href="#">Băng quấn</a>
+                                </li>
+                                <li>
+                                    <a href="#">Dây kháng lực</a>
+                                </li>
+                                <li>
+                                    <a href="#">Thảm yoga</a>
+                                </li>
+                                <li>
+                                    <a href="#">Găng tay</a>
+                                </li>
+                                <li>
+                                    <a href="#">Đai lưng</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__col-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="btn">Phổ biến</button>
+                            <button class="btn btn--primary">Mới nhất</button>
+                            <button class="btn">Bán chạy</button>
+
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="fa-solid fa-caret-down select-input__icon"></i>
+                                <ul class="select-input__list">
+                                    <li>
+                                        <a href="#">Thấp đến cao</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cao đến thấp</a>
+                                    </li>
+                                </ul>
+                                    
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/9
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="">
+                                        <i class="home-filter__page-icon fa-solid fa-angle-left"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="home-filter__page-icon fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="list_product">
+                            <div class="grid__row">
+                                <!-- Product 1 -->
+                                <div class="grid__col-2-10">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(./assets/images/logo.png);"></div>
+                                        <h4 class="product-item__name">Băng Tập Đàn Hồi Ptp Microband X Light - Vàng Chanh</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">1.000.000đ</span>
+
+                                            <span class="product-item__price-current">800.000đ</span> 
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <span class="product-item__like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <span class="product-item__buy" href="#">Mua ngay</span>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Harbinger</span>
+                                            <span class="product-item__origin-name">Mỹ</span>
+                                        </div>
+
+                                    </a>
+                                    
+                                </div>
+                                <!-- Product 2 -->
+                                <div class="grid__col-2-10">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(./assets/images/logo.png);"></div>
+                                        <h4 class="product-item__name">Băng Tập Đàn Hồi Ptp Microband X Light - Vàng Chanh</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">1.000.000đ</span>
+
+                                            <span class="product-item__price-current">800.000đ</span> 
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <span class="product-item__like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <span class="product-item__buy" href="#">Mua ngay</span>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Harbinger</span>
+                                            <span class="product-item__origin-name">Mỹ</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Product 3 -->
+                                <div class="grid__col-2-10">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(./assets/images/logo.png);"></div>
+                                        <h4 class="product-item__name">Băng Tập Đàn Hồi Ptp Microband X Light - Vàng Chanh</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">1.000.000đ</span>
+
+                                            <span class="product-item__price-current">800.000đ</span> 
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <span class="product-item__like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <span class="product-item__buy" href="#">Mua ngay</span>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Harbinger</span>
+                                            <span class="product-item__origin-name">Mỹ</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Product 4 -->
+                                <div class="grid__col-2-10">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(./assets/images/logo.png);"></div>
+                                        <h4 class="product-item__name">Băng Tập Đàn Hồi Ptp Microband X Light - Vàng Chanh</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">1.000.000đ</span>
+
+                                            <span class="product-item__price-current">800.000đ</span> 
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <span class="product-item__like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <span class="product-item__buy" href="#">Mua ngay</span>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Harbinger</span>
+                                            <span class="product-item__origin-name">Mỹ</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Product 5 -->
+                                <div class="grid__col-2-10">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(./assets/images/logo.png);"></div>
+                                        <h4 class="product-item__name">Băng Tập Đàn Hồi Ptp Microband X Light - Vàng Chanh</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">1.000.000đ</span>
+
+                                            <span class="product-item__price-current">800.000đ</span> 
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <span class="product-item__like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <span class="product-item__buy" href="#">Mua ngay</span>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Harbinger</span>
+                                            <span class="product-item__origin-name">Mỹ</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Product 6 -->
+                                <div class="grid__col-2-10">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(./assets/images/logo.png);"></div>
+                                        <h4 class="product-item__name">Băng Tập Đàn Hồi Ptp Microband X Light - Vàng Chanh</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">1.000.000đ</span>
+
+                                            <span class="product-item__price-current">800.000đ</span> 
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <span class="product-item__like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <span class="product-item__buy" href="#">Mua ngay</span>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Harbinger</span>
+                                            <span class="product-item__origin-name">Mỹ</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Product 7 -->
+                                <div class="grid__col-2-10">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(./assets/images/logo.png);"></div>
+                                        <h4 class="product-item__name">Băng Tập Đàn Hồi Ptp Microband X Light - Vàng Chanh</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">1.000.000đ</span>
+
+                                            <span class="product-item__price-current">800.000đ</span> 
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <span class="product-item__like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <span class="product-item__buy" href="#">Mua ngay</span>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Harbinger</span>
+                                            <span class="product-item__origin-name">Mỹ</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Product 8 -->
+                                <div class="grid__col-2-10">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(./assets/images/logo.png);"></div>
+                                        <h4 class="product-item__name">Băng Tập Đàn Hồi Ptp Microband X Light - Vàng Chanh</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">1.000.000đ</span>
+
+                                            <span class="product-item__price-current">800.000đ</span> 
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <span class="product-item__like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <span class="product-item__buy" href="#">Mua ngay</span>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Harbinger</span>
+                                            <span class="product-item__origin-name">Mỹ</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Product 9 -->
+                                <div class="grid__col-2-10">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(./assets/images/logo.png);"></div>
+                                        <h4 class="product-item__name">Băng Tập Đàn Hồi Ptp Microband X Light - Vàng Chanh</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">1.000.000đ</span>
+
+                                            <span class="product-item__price-current">800.000đ</span> 
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <span class="product-item__like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <span class="product-item__buy" href="#">Mua ngay</span>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Harbinger</span>
+                                            <span class="product-item__origin-name">Mỹ</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Product 10 -->
+                                <div class="grid__col-2-10">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(./assets/images/logo.png);"></div>
+                                        <h4 class="product-item__name">Băng Tập Đàn Hồi Ptp Microband X Light - Vàng Chanh</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">1.000.000đ</span>
+
+                                            <span class="product-item__price-current">800.000đ</span> 
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <span class="product-item__like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <span class="product-item__buy" href="#">Mua ngay</span>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Harbinger</span>
+                                            <span class="product-item__origin-name">Mỹ</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__col-2-10">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(./assets/images/logo.png);"></div>
+                                        <h4 class="product-item__name">Băng Tập Đàn Hồi Ptp Microband X Light - Vàng Chanh</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">1.000.000đ</span>
+
+                                            <span class="product-item__price-current">800.000đ</span> 
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <span class="product-item__like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <span class="product-item__buy" href="#">Mua ngay</span>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Harbinger</span>
+                                            <span class="product-item__origin-name">Mỹ</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__col-2-10">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(./assets/images/logo.png);"></div>
+                                        <h4 class="product-item__name">Băng Tập Đàn Hồi Ptp Microband X Light - Vàng Chanh</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">1.000.000đ</span>
+
+                                            <span class="product-item__price-current">800.000đ</span> 
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <span class="product-item__like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <span class="product-item__buy" href="#">Mua ngay</span>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Harbinger</span>
+                                            <span class="product-item__origin-name">Mỹ</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__col-2-10">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="./assets/images/GYM LORD.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid__col-2-10">
+                        <div class="footer__heading">Giới thiệu</div>
+                        <h4 class="introduce-content">GYM LORD - đồ án cuối kì 'webisite bán dụng cụ gym' môn học thực hành nhập môn web và ứng dụng.</h4>
+                    </div>
+                    <div class="grid__col-2-10">
+                        <div class="footer__heading">Chăm sóc khách hàng</div>
+                        <ul class="footer-list">
+                            <li><a href="">Trung tâm hỗ trợ</a></li>
+                            <li><a href="">Hướng dẫn mua hàng</a></li>
+                            <li><a href="">Hường dẫn thanh toán</a></li>
+                            <li><a href="">Góp ý, khiếu nại</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-10">
+                        <div class="footer__heading">Theo dõi chúng tôi</div>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="https://www.facebook.com/phat.huynhnguyentann">
+                                <i class="footer-icon fa-brands fa-facebook"></i>
+                                Facebook
+                                </a>
+                            </li>
+                            <li><a href="https://www.instagram.com/tphat2904/">
+                                <i class="footer-icon fa-brands fa-instagram"></i>
+                                Instagram
+                            </a></li>
+                            <li><a href="https://www.youtube.com/">
+                                <i class="footer-icon fa-brands fa-youtube"></i>
+                                Youtube
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-10">
+                        <div class="footer__heading">Nhập email giúp chúng tôi liên hệ với bạn</div>
+                        <div class="footer__email">
+                            <input type="email" name="search" id="footer-email__input" required placeholder="Nhập email của bạn...">
+                            <button type="submit" class="footer-email__btn">Gửi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__row">
+                    <div class="footer-bottom">
+                        <h3 class="footer-bottom__content">
+                            Họ và tên: Huỳnh Nguyễn Tấn Phát | MSSV: DH52201181 | Lớp: D22_TH02 | Nhóm 4 Thứ 2 Ca 1
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
